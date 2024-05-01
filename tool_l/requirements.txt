@@ -1,0 +1,15 @@
+asammdf==7.4.2
+cantools==39.4.3
+deepdiff==6.2.1
+docx2python==2.10.1
+gensim==4.3.1
+networkx==2.8.5
+nltk==3.7
+openai==0.27.8
+pydlt==0.3.3
+PyExcelerate==0.10.0
+pytest==8.2.0
+python_can==4.0.0
+tqdm==4.64.0
+traitlets==5.14.3
+transformers==4.30.2

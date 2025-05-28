@@ -4,7 +4,7 @@ from tkinter.filedialog import askopenfile, askopenfiles
 import feature_dbc
 import utils_db
 from pathlib import PurePath
-from reporting import create_report_feature_compliance
+# from reporting import create_report_feature_compliance
 
 
 def main(port, db, user, psw, host):
@@ -91,12 +91,12 @@ def main(port, db, user, psw, host):
 
         conn = utils_db.set_conn_parameters(host, port, db, user, psw)
         done = utils_db.upload_dfs(res, conn)
-        done_report = create_report_feature_compliance(res, ff, dbcs_file, architecture_selected,
-                                                       vehicle_selected, CR_selected)
+        # done_report = create_report_feature_compliance(res, ff, dbcs_file, architecture_selected,
+        #                                                vehicle_selected, CR_selected)
         utils_db.del_temporary_files()
-        if done and done_report:
-            Label(ws, text='Feature computed and uploaded!'.upper(), foreground='green').grid(row=12, columnspan=3,
-                                                                                              pady=10)
+        if done:
+            # and done_report:
+            Label(ws, text='Feature computed and uploaded!'.upper(), foreground='green').grid(row=12, columnspan=3, pady=10)
             print('Feature computed and uploaded!')
         else:
             Label(ws, text='problem', foreground='red').grid(row=10, columnspan=3, pady=10)

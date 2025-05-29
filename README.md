@@ -83,8 +83,8 @@ You can set the database connection parameters (port, db, user, password, host) 
 - For PDF report generation, [WeasyPrint](https://weasyprint.org/) and GTK3 runtime may be required on Windows.
 
 ## License
-
+ MIT
 
 ---
 
-For any issues or questions, please refer to the code or contact the project maintainer.
+For any issues or questions, please refer to the code.

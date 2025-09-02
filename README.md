@@ -23,7 +23,7 @@ This project is a comprehensive suite of tools for automotive data analysis, DBC
 
 1. **Clone the repository:**
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/LorenzoMarc/Automotive.git
    cd tool_l
    ```
 
